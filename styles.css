@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background-color: rgb(211, 200, 211);
+}
+
+
+
+.top {
+    grid-area: header;
+    border: 2px solid red;
+}
+.left {
+    grid-area: menu;
+    border: 2px solid red;
+    width: 200px;
+}
+
+.mainP {
+    grid-area: main;
+    border: 2px solid red;
+}
+
+.right {
+    grid-area: right ;
+    border: 2px solid red;
+}
+
+.footer {
+    grid-area: footer;
+    border: 2px solid red;
+    text-align: center;
+    font-size: large;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    'header header header header header header'
+    'menu main main main main right'
+    'footer footer footer footer footer footer'
+    ;
+    gap: 10px;
+    padding: 10px;
+}
+
+.mymenu{
+    margin: auto auto;
+}
+
+
+.mymenu ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 25px 5px;
+    width: fit-content;
+    overflow: hidden;
+}
+
+.mymenu li{
+    float: left;
+    
+}
+
+.mymenu a:link, :visited{
+    background-color: aquamarine;
+    text-align: center;
+    color: chocolate;
+    display: grid;
+    padding: 18px 25px;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: darkolivegreen;
+
+}
+
+.mymenu a:active{
+    transform: translateX(10px) translateY(1px);
+}
+
+
+
+.sideMenu ul{
+    list-style-type: none;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 25px 5px;
+    width: fit-content;
+    overflow: hidden;
+}
+
+.sideMenu li{
+    background-color: aquamarine;
+    text-align: center;
+    color: chocolate;
+    
+    
+}
+
+.sideMenu a:link, :visited{
+    background-color: aquamarine;
+    text-align: center;
+    padding: 18px 25px;
+    color: chocolate;
+    display: grid;
+    text-decoration: none;
+}
+
+.sideMenu a:active{
+    transform: translateY(10px) ;
+}
+
+.image img{
+    float: left;
+    padding: 0 20px 20px 0;
+}
+
+.textmain{
+    position: relative;
+    font-size: large;    
+}
+
+.right img{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    
+}
+
+.textright{
+    left: 50%;
+    transform: translate(-50%);
+    position: relative;
+    max-width: 250px ;
+    text-align: center;
+    font-size: large;
+    margin-top: 15px;
+}
